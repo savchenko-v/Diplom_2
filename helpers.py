@@ -24,7 +24,7 @@ class TestDataHelper:
 
     @staticmethod
     def delete_user(token):
-        response = requests.post(f'{Urls.BASE_URL}{Urls.INFO_USER}', headers={'Authorization': token})
+        response = requests.delete(f'{Urls.BASE_URL}{Urls.INFO_USER}', headers={'Authorization': token})
 
         return response
 
